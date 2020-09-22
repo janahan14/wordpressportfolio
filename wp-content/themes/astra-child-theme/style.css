@@ -1,0 +1,74 @@
+/*
+ Theme Name:   Astra Child Theme
+ Theme URI:    http://http://portfolio.janahan.dk/twenty-fifteen-child/
+ Description:  Astra Child Theme based on the parent theme
+ Author:       Janahan Tharmalingam
+ Author URI:   http://http://portfolio.janahan.dk/
+ Template:     astra
+ Version:      1.1.2
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, blue, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  astrachild
+*/
+
+/*
+.elemtor-30 kodningen gør at billede af mig på forsiden har et overlay som er sort, hvor opacity er 0.5. Dette gør at billedet bliver lidt sort 
+så det passer sammen med hjemmesidens farver.
+*/
+.elementor-30 .elementor-element.elementor-element-5939a86c > .elementor-background-overlay {
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #191919 0%, #757a7b 100%);
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+/*
+Nav baren er sort i stedet for hvid
+*/
+header {
+  background-color:#161616;
+}
+
+/*
+Jeg har ændret KONTAKT MIG knappens farver.
+*/
+.main-header-bar .button-custom-menu-item .ast-custom-button-link .ast-custom-button {
+    color: black;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+  opacity: 1;
+}
+
+/*
+Nav baren på Portfolio sidens farve er ændret til sort
+*/
+.main-header-bar {
+    padding: 1em 0;
+   background-color:#161616;
+}
+
+/*
+Jeg har fjernet et oplæg ved siden "Portfolio" som kom med den valgte template. Den fjernes ved at display er none
+*/
+.ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    padding: 5.34em 6.67em;
+}
+.ast-single-post .entry-title, .page-title {
+    font-size: 30px;
+    font-size: 1.875rem;
+  display:none;
+}
+
+
